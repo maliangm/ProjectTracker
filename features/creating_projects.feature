@@ -10,7 +10,7 @@ Feature: Creating Projects
     Scenario: Creating a project
       When I fill in "Name" with "test project"
       And I press "Create Project"
-      Then I should be on the project page for "test project"
+      Then I should be on the project details page of "test project"
       And I should see "Project has been created."
       And I should see "test project"
     
