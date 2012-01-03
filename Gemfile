@@ -15,11 +15,12 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'dynamic_form'
 end
 
 gem 'jquery-rails'
 
-group :delelopment, :test do
+group :development, :test do
   gem 'rspec-rails'
 end
 
@@ -32,7 +33,6 @@ group :test do
 end
 
 gem 'devise'
-gem 'dynamic_form'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

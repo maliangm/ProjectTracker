@@ -1,3 +1,18 @@
 <h2>Projects</h2>
 
 <%= link_to "New Project", new_project_path %>
+
+<div id="projects">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+    <% @projects.each do |project| %>
+      <tr>
+        <td><%= project.id %></td>
+        <td><%= link_to project.name, project %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
