@@ -8,7 +8,7 @@ Feature: Viewing Tickets
     And there are the following users:
       | email       | password |
       | user@pt.com | password |
-    And "user@pt.com" has created the following tickets for the "Test project" project
+    And "user@pt.com" has created the following tickets for the "Test project" project:
       | title                 | description                          |
       | Test project ticket 1 | Description of Test project ticket 1 |
       | Test project ticket 2 | Description of Test project ticket 2 |

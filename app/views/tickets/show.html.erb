@@ -3,3 +3,11 @@
 <div>
   <%= simple_format(@ticket.description) %>
 </div>
+<%= link_to "New Comment", new_ticket_comment_path(@ticket) %>
+<div id="comments">
+  <ul>
+    <% @ticket.comments.each do |comment| %>
+      <li><%= comment.text %>, Created at <%= comment.created_at %></li>
+    <% end %>
+  </ul>
+</div>
