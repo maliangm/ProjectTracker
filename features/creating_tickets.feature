@@ -7,10 +7,6 @@ Feature: Creating Tickets
       | email       | password |
       | user@pt.com | password |
     When I am on the homepage
-    And I fill in "Email" with "user@pt.com"
-    And I fill in "Password" with "password"
-    And I press "Sign in"
-    Then I should be on the homepage
     When I follow "Test project"
     And I follow "Create Ticket"
   
