@@ -6,6 +6,7 @@ Feature: Creating Tickets
     And there are the following users:
       | email       | password |
       | user@pt.com | password |
+    And I am signed in as "user@pt.com"
     When I am on the homepage
     When I follow "Test project"
     And I follow "Create Ticket"
@@ -16,7 +17,8 @@ Feature: Creating Tickets
     And I press "Create Ticket"
     And I should see "Ticket has been created."
     And I should see "Test ticket 1 title" within "h2"
-  
+    And I should see "Created by user@pt.com"
+    
   Scenario: Creating a ticket with invalid attribute fails
     When I press "Create Ticket"
     Then I should see "Ticket has not been created."
